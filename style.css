@@ -81,74 +81,83 @@ nav.fixed-nav a {
     margin-left: 25px;
 }
 
+.page-decor {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 1;
+}
+
 .circle-top-left {
-position: absolute;
-width: 65px;
-height: 65px;
-background: #050505;
-border-radius: 50%;
-top: 35px;
-left: 42px;
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    background: #050505;
+    border-radius: 50%;
+    top: 35px;
+    left: 42px;
 }
 
 .circle-top-left-small {
-position: absolute;
-width: 28px;
-height: 28px;
-background: #050505;
-border-radius: 50%;
-top: 45px;
-left: 110px;
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    background: #050505;
+    border-radius: 50%;
+    top: 45px;
+    left: 110px;
 }
 
 .circle-top-left-tiny {
-position: absolute;
-width: 14px;
-height: 14px;
-background: #050505;
-border-radius: 50%;
-top: 90px;
-left: 100px;
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background: #050505;
+    border-radius: 50%;
+    top: 90px;
+    left: 100px;
 }
 
 .circle-top-right {
-position: absolute;
-width: 125px;
-height: 105px;
-background: #050505;
-top: -5px;
-right: -35px;
-border-radius: 0 0 0 100px;
+    position: absolute;
+    width: 115px;
+    height: 115px;
+    background: #050505;
+    border-radius: 50%;
+    top: 25px;
+    right: 25px;
 }
 
 .circle-top-right-small {
-position: absolute;
-width: 65px;
-height: 65px;
-background: #050505;
-border-radius: 50%;
-top: 95px;
-right: -5px;
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    background: #050505;
+    border-radius: 50%;
+    top: 105px;
+    right: 105px;
 }
 
 .circle-bottom-left {
-position: absolute;
-width: 145px;
-height: 125px;
-background: #050505;
-bottom: -55px;
-left: -40px;
-border-radius: 100px 100px 0 0;
+    position: absolute;
+    width: 125px;
+    height: 125px;
+    background: #050505;
+    border-radius: 50%;
+    bottom: 25px;
+    left: 25px;
 }
 
+
 .circle-bottom-left-small {
-position: absolute;
-width: 75px;
-height: 75px;
-background: #050505;
-border-radius: 50%;
-bottom: -5px;
-left: 95px;
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    background: #050505;
+    border-radius: 50%;
+    bottom: 40px;
+    left: 125px;
 }
 
 .home-content {
@@ -417,6 +426,19 @@ margin-top: 5px;
 
 .lab-page {
 padding-top: 0;
+}
+
+#prelim-lab .assessment-grid {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+@media (max-width: 800px) {
+    #prelim-lab .assessment-grid {
+        grid-template-columns: 1fr;
+        max-width: 100%;
+    }
 }
 
 .exam-page {
